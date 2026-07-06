@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solicitud de Mantenimiento Correctivo</title>
+
+<link rel="stylesheet" href="estilo-formulario.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>Solicitud de Servicio</h1>
+
+<p class="descripcion">
+Complete el siguiente formulario para solicitar el servicio de mantenimiento correctivo. Nos pondremos en contacto con usted lo antes posible.
+</p>
+
+<form>
+
+<label>Nombre completo</label>
+<input type="text" placeholder="Ingrese su nombre" required>
+
+<label>Correo electrónico</label>
+<input type="email" placeholder="ejemplo@gmail.com" required>
+
+<label>Teléfono</label>
+<input type="tel" placeholder="Ingrese su número" required>
+
+<label>Dirección</label>
+<input type="text" placeholder="Ingrese su dirección">
+
+<label>Tipo de equipo</label>
+
+<select required>
+
+<option value="">Seleccione...</option>
+
+<option>Laptop</option>
+
+<option>Computadora de escritorio</option>
+
+<option>Impresora</option>
+
+<option>Servidor</option>
+
+<option>Otro</option>
+
+</select>
+
+<label>Marca del equipo</label>
+
+<input type="text" placeholder="Ejemplo: HP, Dell, Lenovo">
+
+<label>Modelo</label>
+
+<input type="text" placeholder="Modelo del equipo">
+
+<label>Sistema Operativo</label>
+
+<select>
+
+<option>Windows 11</option>
+
+<option>Windows 10</option>
+
+<option>macOS</option>
+
+<option>Linux</option>
+
+<option>No aplica</option>
+
+</select>
+
+<label>Describe la falla</label>
+
+<textarea rows="6" placeholder="Describe el problema que presenta tu equipo..." required></textarea>
+
+<label>¿Cuándo comenzó el problema?</label>
+
+<input type="date">
+
+<label>¿El equipo enciende?</label>
+
+<select>
+
+<option>Sí</option>
+
+<option>No</option>
+
+<option>A veces</option>
+
+</select>
+
+<label>Prioridad del servicio</label>
+
+<select>
+
+<option>Normal</option>
+
+<option>Urgente</option>
+
+<option>Muy urgente</option>
+
+</select>
+
+<label>
+
+<input type="checkbox" required>
+
+Acepto el tratamiento de mis datos personales.
+
+</label>
+
+<br><br>
+
+<button type="submit">
+Enviar Solicitud
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

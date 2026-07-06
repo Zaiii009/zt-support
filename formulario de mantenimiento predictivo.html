@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitud de Mantenimiento Predictivo</title>
+
+    <link rel="stylesheet" href="formulario de mantenimiento predictivo.css">
+
+</head>
+
+<body>
+<section class="formulario-predictivo">
+
+    <h2>Solicita tu Servicio de Mantenimiento Predictivo</h2>
+
+    <p>
+        Completa el siguiente formulario y uno de nuestros especialistas se pondrá
+        en contacto contigo para programar el diagnóstico de tu equipo.
+    </p>
+
+    <form action="#" method="post">
+        <div class="fila">
+            <div class="campo">
+                <label>Nombre completo</label>
+                <input type="text">
+            </div>
+
+            <div class="campo">
+                <label>Correo electrónico</label>
+                <input type="email">
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="campo">
+                <label>Teléfono</label>
+                <input type="tel">
+            </div>
+
+            <div class="campo">
+                <label>Empresa (Opcional)</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="campo">
+                <label>Tipo de equipo</label>
+
+                <select required>
+                    <option value="">Seleccione una opción</option>
+                    <option>Computadora de escritorio</option>
+                    <option>Laptop</option>
+                    <option>Servidor</option>
+                    <option>Impresora</option>
+                    <option>Otro</option>
+                </select>
+
+            </div>
+
+            <div class="campo">
+                <label>Marca del equipo</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="campo">
+                <label>Modelo</label>
+                <input type="text">
+            </div>
+
+            <div class="campo">
+                <label>Fecha deseada</label>
+                <input type="date">
+            </div>
+
+        </div>
+
+        <div class="campo">
+            <label>Describe el comportamiento del equipo</label>
+
+            <textarea rows="6"
+            placeholder="Describe cualquier ruido, lentitud, calentamiento, mensajes de error o comportamiento inusual..."></textarea>
+        </div>
+
+        <div class="campo">
+            <label>Observaciones adicionales</label>
+            <textarea rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+            Solicitar Mantenimiento Predictivo
+        </button>
+
+    </form>
+
+</section>

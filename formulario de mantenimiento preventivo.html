@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitud de Mantenimiento Preventivo</title>
+
+<link rel="stylesheet" href="formulario de mantenimiento preventivo.css">
+
+</head>
+
+<body>
+
+<section class="formulario">
+
+<h1>Solicitud de Mantenimiento Preventivo</h1>
+
+<p>Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+
+<form action="#" method="post">
+
+<label>Nombre completo</label>
+<input type="text" name="nombre" required>
+
+<label>Correo electrónico</label>
+<input type="email" name="correo" required>
+
+<label>Número de teléfono</label>
+<input type="tel" name="telefono" required>
+
+<label>Empresa (Opcional)</label>
+<input type="text" name="empresa">
+
+<label>Tipo de equipo</label>
+<select name="equipo" required>
+<option value="">Seleccione una opción</option>
+<option>Laptop</option>
+<option>Computadora de escritorio</option>
+<option>Servidor</option>
+<option>Impresora</option>
+<option>Otro</option>
+</select>
+
+<label>Marca del equipo</label>
+<input type="text" name="marca">
+
+<label>Modelo</label>
+<input type="text" name="modelo">
+
+<label>¿Cada cuánto recibe mantenimiento?</label>
+<select name="mantenimiento">
+<option>Nunca</option>
+<option>Cada 3 meses</option>
+<option>Cada 6 meses</option>
+<option>Cada año</option>
+</select>
+
+<label>Dirección del servicio</label>
+<textarea name="direccion" rows="3"></textarea>
+
+<label>Fecha deseada</label>
+<input type="date" name="fecha">
+
+<label>Hora preferida</label>
+<input type="time" name="hora">
+
+<label>Comentarios adicionales</label>
+<textarea name="comentarios" rows="5"></textarea>
+
+<button type="submit">Enviar Solicitud</button>
+
+</form>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Soluciones Tecnologicas "Future Tech ZT"</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilosprincipales.css">
+</head>
+
+<body>   
+ <header> 
+<div class="logo"> 
+<img src="logohorizontal.jpg" alt="ZT Support">
+</div>
+<nav>
+<ul class="menu">
+<li><a href="#menu">Menu</a> 
+</li> 
+<li class="desplegable"> 
+<a href="#soporte">soporte</a> 
+<ul class="submenu"> 
+<li><a href="soporte.html">Presencial</a></li>
+<li><a href="soporte.html">Distancia</a></li> 
+</ul>
+</li> 
+<li class="desplegable">
+<a href="mantenimiento.html">Mantenimiento</a> 
+<ul class="submenu"> 
+<li><a href="mantenimiento.html">Preventivo</a></li>
+<li><a href="mantenimiento.html">Correctivo</a></li>
+<li><a href="mantenimiento.html">Predictivo</a></li>
+</ul> 
+</li> 
+<li class="desplegable">
+<a href="asesorias.html">Asesoria</a> 
+<ul class="submenu"> 
+<li><a  href="#clases">Clases</a></li> 
+</ul> 
+</li> 
+<li class="desplegable"> 
+<a href="#ventas">Ventas</a> 
+<ul class="submenu"> 
+<li><a href="#hardware">Hardware</a></li> 
+</ul>
+</li> 
+<li class="desplegable">
+<a href="#contacto">Contacto</a> 
+<ul class="submenu"> 
+<li><a href="contacto.html">Nosotros</a></li> 
+<li><a href="contacto.html">Ubicacion</a></li> 
+<li><a href="contacto.html">Sucursal</a></li> 
+</ul> 
+</li>
+<li><a href="registro.html">Registro</a></li>
+<li><a href="login.html">Iniciar sesión</a></li> 
+</ul> 
+</nav> 
+</header>
+<center>
+ <div class="contenedor-carrusel">
+<button class=</button>
+        <div class="carrusel">
+            <div class="item">
+                <img src="banner1.jpg"">
+            </div>
+            <div class="item">
+                <img src="banner2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="banner3.jpg" alt="">
+            </div>
+	    <div class="item">
+                <img src="banner4.jpg" alt="">
+            </div>
+    </div>
+           <button class="prev"><</button>
+           <button class="next">></button>
+    </div>
+</center>
+
+<section class="bienvenida">
+<div class="texto">
+    <h2>¡Bienvenidos a Future Tech ZT!</h2>
+    <p>
+        En Future Tech ZT ofrecemos soluciones tecnológicas de calidad para satisfacer tus necesidades.
+        Brindamos soporte técnico, mantenimiento, asesoría y venta de hardware con un servicio profesional y confiable.
+    </p>
+<div class="beneficios">
+
+    <div class="card">
+        <img src="confianza.jpg">
+        <h4>Confianza</h4>
+        <center><p>En cada servicio</p></center>
+    </div>
+
+    <div class="card">
+        <img src="atencion.jpg">
+        <h4>Atención</h4>
+        <center><p>Rápida</p></center>
+    </div>
+
+    <div class="card">
+        <img src="calidad.jpg">
+        <h4>Calidad</h4>
+        <p>Garantizada</p>
+    </div>
+
+    <div class="card">
+        <img src="soporte.jpg">
+        <h4>Soporte</h4>
+        <p>Personalizado</p>
+    </div>
+
+</div>
+<div class="botones">
+<a href="nosotros.html">
+   <a href="contacto.html" class="btn">CONÓCENOS</a>
+  <a href="registro.html" class="btn">REGISTRARSE</a>
+<a href="login.html" class="btn">INICIAR SESIÓN</a>
+</div>
+</a>
+</div> 
+<div class="video"> 
+<video controls> 
+   <source src="videopromocion.mp4" type="video/mp4">
+   tu navegador no soporta videos.
+</video>
+</div>
+</section>
+<section class="servicios">
+
+    <h2>NUESTROS <span>SERVICIOS</span></h2>
+
+    <div class="contenedor-servicios">
+
+        <div class="servicio">
+            <img src="soporte2.jpg">
+            <h3>SOPORTE TÉCNICO</h3>
+            <p>Soporte presencial y a distancia para resolver cualquier problema.</p>
+            <button><a href="soporte.html" class="btn">VER MÁS</a></button>
+        </div>
+
+        <div class="servicio">
+            <img src="mantenimiento2.jpg">
+            <h3>MANTENIMIENTO</h3>
+            <p>Preventivo, correctivo y predictivo para mantener tus equipos siempre al 100%.</p>
+            <button><a href="mantenimiento.html" class="btn">VER MÁS</a></button>
+        </div>
+
+        <div class="servicio">
+            <img src="asesoria2.jpg">
+            <h3>ASESORÍAS Y CURSOS</h3>
+            <p>Clases, cursos y capacitaciones en tecnología para todos los niveles.</p>
+            <button><a href="asesorias.html" class="btn">VER MÁS</a></button>
+        </div>
+
+        <div class="servicio">
+            <img src="ventas2.jpg">
+            <h3>VENTA DE HARDWARE Y SOFTWARE</h3>
+            <p>Equipos, accesorios, licencias y más con la mejor calidad.</p>
+            <button><a href="ventas.html" class="btn">VER MÁS</a></button>
+        </div>
+
+    </div>
+
+<script>
+const carrusel = document.querySelector(".carrusel");
+const items = document.querySelectorAll(".item");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+let indice = 0;
+
+function mostrarSlide() {
+    carrusel.scrollTo({
+        left: indice * carrusel.clientWidth,
+        behavior: "smooth"
+    });
+}
+
+next.addEventListener("click", () => {
+    indice++;
+    if (indice >= items.length) indice = 0;
+    mostrarSlide();
+});
+
+prev.addEventListener("click", () => {
+    indice--;
+    if (indice < 0) indice = items.length - 1;
+    mostrarSlide();
+});
+
+// Cambio automático cada 5 segundos
+setInterval(() => {
+    indice++;
+    if (indice >= items.length) indice = 0;
+    mostrarSlide();
+}, 5000);
+</script>
+<footer class="footer">
+
+    <div class="footer-contenedor">
+
+        <div class="footer-col">
+            <img src="logo2.jpg" class="logo-footer">
+
+            <p>
+                Soluciones tecnológicas<br>
+                que impulsan tu mundo.
+            </p>
+
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1CUVvA9NEL/?mibextid=wwXIfr"><img src="facebook.jpg"></a>
+                <a href="https://www.instagram.com/futuretech_tzsupport?igsh=bXJzMjlwcTFwcTl0&utm_source=qr"><img src="instagram.jpg"></a>
+                <a href="https://www.tiktok.com/@futuretech_09?_r=1&_t=ZS-97oEDzyrsEJ"><img src="tiktok.jpg"></a>
+                <a href="#"><img src="whatsapp.jpg"></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>ENLACES RÁPIDOS</h3>
+
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="mantenimiento.html">Mantenimiento</a>
+            <a href="asesorias.html">Asesoría</a>
+            <a href="#">Ventas</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>SERVICIOS</h3>
+
+            <a href="soporte.html">✔ Soporte técnico</a>
+            <a href="mantenimiento.html">✔ Mantenimiento preventivo</a>
+            <a href="#">✔ Mantenimiento correctivo</a>
+            <a href="#">✔ Mantenimiento predictivo</a>
+            <a href="asesorias.html">✔ Asesorías y cursos</a>
+            <a href="#">✔ Venta de hardware y software</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>CONTACTO</h3>
+
+            <p>📞 52 55 1234 5678</p>
+            <p>📧 soporte@futuretechzt.com</p>
+            <p>📍 Coatepec Harinas, Estado de México</p>
+
+            <a href="#" class="boton-footer">
+                ESCRÍBENOS POR WHATSAPP
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Future Tech ZT. Todos los derechos reservados.
+    </div>
+
+</footer>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
